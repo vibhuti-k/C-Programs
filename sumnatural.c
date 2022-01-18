@@ -1,20 +1,14 @@
-//Print sum of even and odd numbers upto N without using if statement.
+//Print sum of all the natural numbers upto Nth values.
 #include <stdio.h>
 void main()
 {
-    int N,i=2,j=1,se=0,so=0;
+    int N,S=0;
     printf("Enter the range ending : ");
     scanf("%d",&N);
-    while(i<=N)
+    while(N>0)
     {
-        se=se+i;
-        i=i+2;
+        S=S+N;
+        N--;
     }
-    while(j<=N)
-    {
-        so=so+j;
-        j=j+2;
-    }
-    printf("%d is sum of even numbers.\n",se);
-    printf("%d is sum of odd numbers.",so);
+    printf("%d is the sum.",S);
 }
